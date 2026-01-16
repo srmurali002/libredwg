@@ -1226,8 +1226,8 @@ cquote (char *restrict dest, const size_t len, const char *restrict src)
     {
       if (c == '\n' && dest + 1 < dend)
         {
-          *dest++ = '^';
-          *dest++ = 'J';
+          *dest++ = '\\';
+          *dest++ = 'P';
         }
       else if (c == '\r' && dest + 1 < dend)
         {
